@@ -16,7 +16,7 @@ class UserController extends Controller
     public function index(): JsonResponse
     {
         return response()->json(
-            User::query()->latest()->paginate(15)
+            User::query()->orderBy("id")->get()
         );
     }
 
@@ -74,5 +74,21 @@ class UserController extends Controller
         $user->delete();
 
         return response()->json(null, 204);
+    }
+    
+    public function dominiosMasUsados(): JsonResponse
+    {
+        $domains = User::query()
+            ->get()
+            ->groupBy(fn (User $user) => strtolower(substr(strrchr($user->email, '@'), 1)))
+            ->map(fn ($users, $domain) => [
+                'domain' => $domain,
+                'total' => $users->count(),
+            ])
+            ->sortByDesc('total')
+            ->take(3)
+            ->values();
+
+        return response()->json($domains);
     }
 }

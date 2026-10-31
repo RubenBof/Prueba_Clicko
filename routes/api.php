@@ -8,4 +8,6 @@ use App\Http\Controllers\Api\UserController;
 //    return $request->user();
 //})->middleware('auth:sanctum');
 
+Route::get('users/dominios',[UserController::class, 'dominiosMasUsados']);
+
 Route::apiResource('users', UserController::class);
