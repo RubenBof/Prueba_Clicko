@@ -38,7 +38,7 @@ php artisan key:generate
 Ejecuta las migraciones y el seeder:
 
 ```bash
-php artisan migrate
+New-Item database\database.sqlite
 php artisan db:seed --class=UserSeeder
 
 ```
