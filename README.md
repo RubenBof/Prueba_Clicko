@@ -1,6 +1,6 @@
 ## Requisitos previos a la instalacion
 
-- PHP 8.4.6 o superior
+- PHP 8.3 o superior
 - Composer.
 
 ## Guia de instalación
