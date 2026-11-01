@@ -13,7 +13,7 @@ git clone <URL_DEL_REPOSITORIO>
 Accede al directorio:
 
 ```bash
-cd clicko-api
+cd Prueba_Clicko
 ```
 Instala las dependencias:
 
