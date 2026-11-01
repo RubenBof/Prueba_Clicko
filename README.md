@@ -52,10 +52,10 @@ php artisan serve
 ```
 
 ## Las rutas de la API
-# GET - /api/users
+### GET - /api/users
 Devuelve la colección de usuarios.
 
-# POST - /api/users
+### POST - /api/users
 Crea un usuario, los datos deben enviarse en un json en el body.
 Cabecera:
 
@@ -71,11 +71,11 @@ Body:
 }
 ```
 
-# GET - /api/users/{id}
+### GET - /api/users/{id}
 Devuelve los datos del usuario de la 'id' indicada.
 
 
-# PUT - /api/users/{id}
+### PUT - /api/users/{id}
 Permite editar el usuario de la 'id' indicada, enviando los datos en un json en el body.
 
 Body:
@@ -87,10 +87,10 @@ Body:
 ```
 
 
-# DELETE - /api/users/{id}
+### DELETE - /api/users/{id}
 Elimina al usuario de la 'id' indicada.
 
-# GET - /api/users/dominios
+### GET - /api/users/dominios
 Muestra los tres dominios de correo mas usados entre los usuarios.
 
 ## Seguridad y configuración
