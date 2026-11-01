@@ -1,6 +1,6 @@
 ## Requisitos previos a la instalacion
 
-- PHP.
+- PHP 8.4.6 o superior
 - Composer.
 
 ## Guia de instalación
@@ -8,7 +8,7 @@
 - Clona el repositorio:
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/RubenBof/Prueba_Clicko
 ```
 Accede al directorio:
 
@@ -92,6 +92,24 @@ Elimina al usuario de la 'id' indicada.
 
 ### GET - /api/users/dominios
 Muestra los tres dominios de correo mas usados entre los usuarios.
+Ejemplo de respuesta:
+
+```json
+[
+    {
+        "domain": "gmail.com",
+        "total": 8
+    },
+    {
+        "domain": "outlook.com",
+        "total": 5
+    },
+    {
+        "domain": "hotmail.com",
+        "total": 4
+    }
+]
+```
 
 ## Seguridad y configuración
 
