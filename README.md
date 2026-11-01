@@ -1,6 +1,6 @@
 ## Requisitos previos a la instalacion
 
-- PHP 8.3 o superior
+- PHP 8.4.6 o superior
 - Composer.
 
 ## Guia de instalación
@@ -39,6 +39,7 @@ Ejecuta las migraciones y el seeder:
 
 ```bash
 New-Item database\database.sqlite
+php artisan migrate
 php artisan db:seed --class=UserSeeder
 
 ```
